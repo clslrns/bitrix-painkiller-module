@@ -1,6 +1,6 @@
 <?
-$MESS['PAINKILLER_DESCRIPTION'] = 'Ð’ÑÐ¿Ð¾Ð¼Ð¾Ð³Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Ð´Ð»Ñ Ð¿Ð»Ð°Ð³Ð¸Ð½Ð° Sublime Text 2, Ð¾Ð±Ð»ÐµÐ³Ñ‡Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÑƒ ÑÐ°Ð¹Ñ‚Ð¾Ð² Ð½Ð° 1Ð¡-Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ';
-$MESS['PAINKILLER_INSTALL'] = 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ thelikers.painkiller';
-$MESS['PAINKILLER_UNINSTALL'] = 'Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ thelikers.painkiller';
-$MESS['PAINKILLER_PARTNER_NAME'] = 'Ð›Ð°Ð¹ÐºÐµÑ€Ñ';
+$MESS['PAINKILLER_DESCRIPTION'] = 'Âñïîìîãàòåëüíûé ìîäóëü äëÿ ïëàãèíà Sublime Text 2, îáëåã÷àþùåãî ðàçðàáîòêó ñàéòîâ íà 1Ñ-Áèòðèêñ';
+$MESS['PAINKILLER_INSTALL'] = 'Óñòàíîâêà ìîäóëÿ thelikers.painkiller';
+$MESS['PAINKILLER_UNINSTALL'] = 'Óäàëåíèå ìîäóëÿ thelikers.painkiller';
+$MESS['PAINKILLER_PARTNER_NAME'] = 'Ëàéêåðñ';
 $MESS['PAINKILLER_MODULE_NAME'] = 'Bitrix Painkiller';

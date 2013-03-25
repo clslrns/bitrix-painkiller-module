@@ -1,2 +1,2 @@
 <?
-$MESS['PAINKILLER_INSTALL'] = 'РњРѕРґСѓР»СЊ thelikers.painkiller СѓСЃС‚Р°РЅРѕРІР»РµРЅ';
+$MESS['PAINKILLER_INSTALL'] = 'Модуль thelikers.painkiller установлен';
