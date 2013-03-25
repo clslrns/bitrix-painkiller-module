@@ -15,9 +15,9 @@ class thelikers_painkiller extends CModule
 
         $this->MODULE_VERSION = $arModuleVersion["VERSION"];
         $this->MODULE_VERSION_DATE = $arModuleVersion["VERSION_DATE"];
-        $this->MODULE_NAME = "Bitrix Painkiller";
+        $this->MODULE_NAME = GetMessage('PAINKILLER_MODULE_NAME');
         $this->MODULE_DESCRIPTION = GetMessage('PAINKILLER_DESCRIPTION');
-        $this->PARTNER_NAME = "The Likers";
+        $this->PARTNER_NAME = GetMessage('PAINKILLER_PARTNER_NAME');
         $this->PARTNER_URI = "http://1c-bitrix.ru/partners/310515.php";
     }
 
