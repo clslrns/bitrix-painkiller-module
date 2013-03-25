@@ -23,12 +23,12 @@ class thelikers_painkiller extends CModule
 
     private function _InstallFiles(){
         global $DOCUMENT_ROOT;
-        file_put_contents( dirname( __FILE__ ) . '/../site_host', $_SERVER['HTTP_HOST'] );
-        copy(
+        $fpc = file_put_contents( dirname( __FILE__ ) . '/../site_host', $_SERVER['HTTP_HOST'] );
+        $cp = copy(
             dirname( __FILE__ ) . '/painkiller_component_signature.php',
             $DOCUMENT_ROOT . '/bitrix/tools/painkiller_component_signature.php'
         );
-        return true;
+        return $fpc && $cp;
     }
 
     private function _UnInstallFiles(){
@@ -40,12 +40,19 @@ class thelikers_painkiller extends CModule
 
     public function DoInstall(){
         global $DOCUMENT_ROOT, $APPLICATION;
-        $this->_InstallFiles();
-        RegisterModule( $this->MODULE_ID );
-        $APPLICATION->IncludeAdminFile(
-            GetMessage('PAINKILLER_INSTALL'),
-            $DOCUMENT_ROOT . '/bitrix/modules/' . $this->MODULE_ID . '/install/step.php'
-        );
+        if( $this->_InstallFiles() ){
+            RegisterModule( $this->MODULE_ID );
+            $APPLICATION->IncludeAdminFile(
+                GetMessage('PAINKILLER_INSTALL'),
+                $DOCUMENT_ROOT . '/bitrix/modules/' . $this->MODULE_ID . '/install/step.php'
+            );
+        }
+        else{
+            $APPLICATION->IncludeAdminFile(
+                GetMessage('PAINKILLER_INSTALL'),
+                $DOCUMENT_ROOT . '/bitrix/modules/' . $this->MODULE_ID . '/install/error.php'
+            );
+        }
     }
 
     public function DoUninstall(){
