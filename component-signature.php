@@ -10,6 +10,8 @@ Response in JSON: {
         found — component founded,
         not_found — ...,
         error — bad component name
+        not_found — ...,
+        error — bad component name
     data:
         in error case — array with calculated namespace and component name for debug purposes;
         in other cases, array with component' default params

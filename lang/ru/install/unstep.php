@@ -1,2 +1,2 @@
 <?
-$MESS['PAINKILLER_UNINSTALL'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ thelikers.painkiller ÑƒÐ´Ð°Ð»ÐµÐ½';
+$MESS['PAINKILLER_UNINSTALL'] = 'Ìîäóëü thelikers.painkiller óäàëåí';
