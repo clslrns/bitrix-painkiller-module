@@ -1,18 +1,18 @@
 <?
 /*
-Возвращает параметры компонента по умолчанию на основании названия.
+Returns component parametrs for given component name
 
-Пример вызова:
-/bitrix/modules/painkiller/components-api.php?component=bitrix:news.list
+Usage:
+?component=bitrix:news.list
 
-Ответ в формате JSON: {
+Response in JSON: {
     status:
-        found — компонент найден,
-        not_found — компонент не найден,
-        error — ошибка в названии или пространстве имён
+        found — component founded,
+        not_found — ...,
+        error — bad component name
     data:
-        в случае ошибки — объект с вычесленным именем, пространством имён и директорией компонента;
-        иначе — объект с параметрами и значениями по умолчанию
+        in error case — array with calculated namespace and component name for debug purposes;
+        in other cases, array with component' default params
 }
 */
 
@@ -21,8 +21,7 @@ require $bitrixDir . '/modules/main/include.php';
 
 list( $arCData['nspace'], $arCData['name'] ) = explode( ':', urldecode($_GET['component']) );
 
-// Валидация пространства имён и названия компонента
-// Не даст подключить файл .parametrs.php из директории, отличной от /bitrix/components
+// Namespace and name validation
 if( !preg_match( '/[a-zA-Z_-]+/', $arCData['nspace'] )
     || !preg_match( '/[a-zA-Z._-]+/', $arCData['name'] ) )
 {
